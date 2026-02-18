@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electronics Collection</title>
+  <link rel="shortcut icon" href="./assets/images/icons/IMG_20250920_214521.png" type="image/x-icon">
+
+  <!-- Ionicons for icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f7ff;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0d47a1;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product {
+      background: #fff;
+      width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      font-size: 16px;
+      margin: 8px 0 5px;
+      color: #222;
+    }
+
+    .price {
+      color: #1565c0;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding-bottom: 10px;
+    }
+
+    .btn {
+      background: #e3f2fd;
+      border: none;
+      border-radius: 6px;
+      padding: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #bbdefb;
+    }
+
+    .btn ion-icon {
+      font-size: 20px;
+      color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Electronics Collection</h2>
+
+  <div class="product-container">
+
+    <!-- 1. Laptop -->
+    <div class="product">
+      <img src=".\assets\images\Leptop\hp-pavilion-plus-13th-gen-intel-evo-core-laptop-500x500.webp" alt="Laptop">
+      <h3>HP Pavilion Laptop</h3>
+      <div class="price">₹54,999</div>
+      <div class="actions">
+        <button class="btn" onclick="addWishlist('HP Pavilion Laptop')"><ion-icon name="heart-outline"></ion-icon></button>
+        <button class="btn" onclick="viewProduct('HP Pavilion Laptop')"><ion-icon name="eye-outline"></ion-icon></button>
+        <button class="btn" onclick="addCart('HP Pavilion Laptop')"><ion-icon name="bag-add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <!-- 2. Mobile -->
+    <div class="product">
+      <img src=".\assets\images\Leptop\ctpWoErGahbSxQHGxh3P3A.webp" alt="Mobile">
+      <h3>iPhone 14</h3>
+      <div class="price">₹79,999</div>
+      <div class="actions">
+        <button class="btn" onclick="addWishlist('iPhone 14')"><ion-icon name="heart-outline"></ion-icon></button>
+        <button class="btn" onclick="viewProduct('iPhone 14')"><ion-icon name="eye-outline"></ion-icon></button>
+        <button class="btn" onclick="addCart('iPhone 14')"><ion-icon name="bag-add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <!-- 3. Camera -->
+    <div class="product">
+      <img src=".\assets\images\Leptop\1064634882.jpg" alt="Camera">
+      <h3>Canon DSLR Camera</h3>
+      <div class="price">₹44,499</div>
+      <div class="actions">
+        <button class="btn" onclick="addWishlist('Canon DSLR Camera')"><ion-icon name="heart-outline"></ion-icon></button>
+        <button class="btn" onclick="viewProduct('Canon DSLR Camera')"><ion-icon name="eye-outline"></ion-icon></button>
+        <button class="btn" onclick="addCart('Canon DSLR Camera')"><ion-icon name="bag-add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <!-- 4. Smart Watch -->
+    <div class="product">
+      <img src=".\assets\images\Leptop\smartwatch-8300238_640.webp" alt="Smart Watch">
+      <h3>Apple Smart Watch</h3>
+      <div class="price">₹29,999</div>
+      <div class="actions">
+        <button class="btn" onclick="addWishlist('Apple Smart Watch')"><ion-icon name="heart-outline"></ion-icon></button>
+        <button class="btn" onclick="viewProduct('Apple Smart Watch')"><ion-icon name="eye-outline"></ion-icon></button>
+        <button class="btn" onclick="addCart('Apple Smart Watch')"><ion-icon name="bag-add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <!-- 5. Smart TV -->
+    <div class="product">
+      <img src=".\assets\images\Leptop\s-l300.webp" alt="Smart TV">
+      <h3>Samsung Smart TV</h3>
+      <div class="price">₹64,999</div>
+      <div class="actions">
+        <button class="btn" onclick="addWishlist('Samsung Smart TV')"><ion-icon name="heart-outline"></ion-icon></button>
+        <button class="btn" onclick="viewProduct('Samsung Smart TV')"><ion-icon name="eye-outline"></ion-icon></button>
+        <button class="btn" onclick="addCart('Samsung Smart TV')"><ion-icon name="bag-add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function addWishlist(name) {
+      alert(name + " added to Wishlist ❤️");
+    }
+
+    function viewProduct(name) {
+      alert("Viewing " + name + " 👁️");
+    }
+
+    function addCart(name) {
+      alert(name + " added to Cart 🛒");
+    }
+  </script>
+
+</body>
+</html>

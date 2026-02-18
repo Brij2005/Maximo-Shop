@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Categories</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background-color: #95befb;
+    }
+
+    .category-section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .category-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #333;
+      letter-spacing: 1px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .category-card {
+      background: #f2c6c6;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .category-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+    }
+
+    .category-card h2 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .category-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .category-card ul li {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+
+    .category-card:hover ul li {
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      .category-section h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="category-section">
+    <h1>Shopping hub</h1>
+    <div class="categories">
+
+      <div class="category-card">
+        <h2>Electronics</h2>
+        <ul>
+          <li class="panel-list-item">
+            <a href="Desktop.html">Desktop</a>
+          </li>
+          <li class="panel-list-item">
+            <a href="Laptop.html">Laptop</a>
+          </li>
+          <li class="panel-list-item">
+            <a href="Mobile.html">Mobile</a>
+          </li>
+          <li class="panel-list-item">
+            <a href="Tablet.html">Tablet</a></li>
+          <li><a href="Headphone.html">Headphone</a></li>
+          <li><a href="Smart watch.html">Smart Watch</a></li>
+          <li><a href="Smart TV">Smart TV</a></li>
+          <li><a href="Keyboard">Keyboard</a></li>
+          <li>
+            <a href="Mouse.html">Mouse</a>
+          </li>
+          <li>
+            <a href="Microphone.html">Microphone</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h2>Men’s Fashion</h2>
+        <ul>
+          <li><a href="Formal.html">Formal</a></li>
+          <li><a href="Casual wear.html">Casual wear</a> </li>
+          <li>
+            <a href="Sports.html">Sports</a>
+          </li>
+          <li>
+            <a href="Jacket.html">Jacket</a>
+          </li>
+          <li>
+            <a href="Sunglasses.html">Sunglasses</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h2>Women’s Fashion</h2>
+        <ul>
+          <li>
+            <a href="Women Formal.html">Formal</a></li>
+          <li>
+            <a href="Women wear.html">Casual wear</a>
+          </li>
+          <li>
+            <a href="Perfume.html">Perfume</a>
+          </li>
+          <li>
+            <a href="Cosmetics.html">Cosmetics</a>
+          </li>
+          <li>
+            <a href="Handbag.html">Handbag</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

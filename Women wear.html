@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women's Fashion</title>
+
+  <!-- Ionicons for icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8fb;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #d63384;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product {
+      background: #fff;
+      width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      font-size: 16px;
+      margin: 8px 0 5px;
+      color: #222;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding-bottom: 10px;
+    }
+
+    .btn {
+      background: #fce4ec;
+      border: none;
+      border-radius: 6px;
+      padding: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #f8bbd0;
+    }
+
+    .btn ion-icon {
+      font-size: 20px;
+      color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Women's Fashion Collection</h2>
+
+  <div class="product-container">
+
+    <!-- 1. Formal -->
+    <div class="product">
+      <img src=".\assets\images\Women\H31ab84785abc47339047a65b67650eb07.jpg_300x300.webp" alt="Formal">
+      <h3>Formal Dress</h3>
+      <div class="price">₹1,299</div>
+      <div class="actions">
+        <button class="btn" onclick="addWishlist('Formal Dress')"><ion-icon name="heart-outline"></ion-icon></button>
+        <button class="btn" onclick="viewProduct('Formal Dress')"><ion-icon name="eye-outline"></ion-icon></button>
+        <button class="btn" onclick="addCart('Formal Dress')"><ion-icon name="bag-add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <!-- 2. Casual -->
+    <div class="product">
+      <img src=".\assets\images\Women\812BQDc01eL.webp" alt="Casual">
+      <h3>Casual Top</h3>
+      <div class="price">₹699</div>
+      <div class="actions">
+        <button class="btn" onclick="addWishlist('Casual Top')"><ion-icon name="heart-outline"></ion-icon></button>
+        <button class="btn" onclick="viewProduct('Casual Top')"><ion-icon name="eye-outline"></ion-icon></button>
+        <button class="btn" onclick="addCart('Casual Top')"><ion-icon name="bag-add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <!-- 3. Perfume -->
+    <div class="product">
+      <img src=".\assets\images\Women\WhatsApp Image 2025-10-11 at 10.18.28_77202dec.jpg" alt="Perfume">
+      <h3>Flower Perfume</h3>
+      <div class="price">₹1,099</div>
+      <div class="actions">
+        <button class="btn" onclick="addWishlist('Flower Perfume')"><ion-icon name="heart-outline"></ion-icon></button>
+        <button class="btn" onclick="viewProduct('Flower Perfume')"><ion-icon name="eye-outline"></ion-icon></button>
+        <button class="btn" onclick="addCart('Flower Perfume')"><ion-icon name="bag-add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <!-- 4. Cosmetics -->
+    <div class="product">
+      <img src=".\assets\images\Women\41gS8k1voNL.webp" alt="Cosmetics">
+      <h3>Makeup Kit</h3>
+      <div class="price">₹1,499</div>
+      <div class="actions">
+        <button class="btn" onclick="addWishlist('Makeup Kit')"><ion-icon name="heart-outline"></ion-icon></button>
+        <button class="btn" onclick="viewProduct('Makeup Kit')"><ion-icon name="eye-outline"></ion-icon></button>
+        <button class="btn" onclick="addCart('Makeup Kit')"><ion-icon name="bag-add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <!-- 5. Bags -->
+    <div class="product">
+      <img src=".\assets\images\Women\WhatsApp Image 2025-10-11 at 10.29.25_9cc99270.jpg" alt="Bags">
+      <h3>Leather Handbag</h3>
+      <div class="price">₹1,899</div>
+      <div class="actions">
+        <button class="btn" onclick="addWishlist('Leather Handbag')"><ion-icon name="heart-outline"></ion-icon></button>
+        <button class="btn" onclick="viewProduct('Leather Handbag')"><ion-icon name="eye-outline"></ion-icon></button>
+        <button class="btn" onclick="addCart('Leather Handbag')"><ion-icon name="bag-add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Simple JS actions for alerts
+    function addWishlist(name) {
+      alert(name + " added to Wishlist ❤️");
+    }
+
+    function viewProduct(name) {
+      alert("Viewing " + name + " 👁️");
+    }
+
+    function addCart(name) {
+      alert(name + " added to Cart 🛒");
+    }
+  </script>
+
+</body>
+</html>

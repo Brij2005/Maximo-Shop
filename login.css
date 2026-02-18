@@ -1,0 +1,90 @@
+body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: flex;
+            padding: 20px 40px;
+            max-width: 700px;
+            width: 100%;
+ }
+        .image {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .image img {
+            max-height: 320px;
+            max-width: 150px;
+        }
+        form {
+            flex: 1;
+        }
+        h2 {
+            color: #2a74da;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+.form-group label {
+            flex-basis: 48%;
+            margin-bottom: 5px;
+            color: #666;
+            font-size: 0.85rem;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group input[type="email"],
+        .form-group select,
+        .form-group input[type="file"] {
+            flex-basis: 48%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .file-input {
+            padding: 0;
+            border: none;
+        }
+        .form-group-file {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+ .login-link {
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: #2a74da;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            color: white;
+            background: linear-gradient(90deg, #33aaff, #8673ff);
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #2182d0, #7045e0);
+        }
